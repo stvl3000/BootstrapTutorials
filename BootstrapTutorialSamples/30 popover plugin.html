@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+
+<a href="#" data-toggle="popover" title="Popver Header" data-content="Some content inside the popover">Toggle popover</a>
+<br/><br/>
+<ul class="list-inline">
+	<li><a href="#" title="Header" data-toggle="popover" data-placement="auto" data-content="Content">Auto</a></li>
+	<li><a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">Top</a></li>
+	<li><a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Bottm</a></li>
+	<li><a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Left</a></li>
+	<li><a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Right</a></li>
+</ul>
+<h3>Closing Popover by data-trigger="focus"</h3>
+<a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">Click me</a>
+<h3>data-trigger="hover" for mouse over</h3>
+<a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content">Hover over me</a>
+
+<p>For a complete reference of all popover, refer to: <a href="http://www.w3schools.com/bootstrap/bootstrap_ref_js_popover.asp"><h4>Bootstrap JS Popover Reference</h4></a>
+
+
+</div>
+<script>
+$(document).ready(function(){
+	$('[data-toggle="popover"]').popover();
+});
+</script>
+
+
+<div class="container">
+<br/><footer class="panel panel-info">footer<br/></footer>
+</div>
+</body>
+</html>

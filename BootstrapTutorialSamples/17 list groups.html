@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+<h3>Basic List Groups</h3>
+<p> use an ul element with .list-group class, and li elements with .list-group-item class to create a basic list.</p>
+<ul class="list-group">
+	<li class="list-group-item">First item</li>
+	<li class="list-group-item">Second item</li>
+	<li class="list-group-item">Third item</li>
+</ul>
+
+<br/>
+<h3>List Groups With Badges</h3>
+<p>create a span element with .badge class inside the list item will create a badge on the right</p>
+<ul class="list-group">
+	<li class="list-group-item">New<span class="badge">12</span></li>
+	<li class="list-group-item">Delete<span class="badge">5</span></li>
+	<li class="list-group-item">Warning<span class="badge">3</span></li>
+</ul>
+
+<br/><h3>List Group With Linked Items</h3>
+<p>use div & a elements instead of ul & li to create list group with linked items.<br/> use .active class to highlight the current item
+<br/>use .disabled class to disable a item.
+</p>
+<div class="list-group">
+	<a href="#" class="list-group-item active">First item<span class="badge">3</span></a>
+	<a href="#" class="list-group-item">Second item</a>
+	<a href="#" class="list-group-item">Third</a>
+	<a href="#" class="list-group-item disabled">Fourth</a>
+</div>
+
+<br/><h3>Contextual Classes</h3>
+<p>color list-items are: .list-group-item-success, .list-group-item-info, .list-group-item-warning, .list-group-item-danger</p>
+<ul class="list-group">
+	<li class="list-group-item list-group-item-success">First</li>
+	<li class="list-group-item list-group-item-info">Second</li>
+	<li class="list-group-item list-group-item-warning">Fourth</li>
+	<li class="list-group-item list-group-item-danger">Fifth</li>
+</ul>
+
+<br/><h3>Custom Content</h3>
+<p>any HTML can add inside list group item. 2 classes: .list-group-item-heading and .list-group-item-text</p>
+<div class="list-group">
+	<a href="#" class="list-group-item active">
+	<h4 class="list-group-item-heading">First List Group Item Heading</h4>
+	<p class="list-group-item-text">List group item's text resides inside here.</p>
+	</a>
+	<a href="#" class="list-group-item">
+	<p class="list-group-item-heading">Second List Group Item Heading</p>
+	<p class="list-group-item-text">Second List Group Item Heading's List group item's text. <br/>Only the color of heading is darker.</p>
+	</a>
+	<a href="#" class="list-group-item">
+	<h4 class="list-group-item-heading">Third List Group Item Heading</h4>
+	<p class="list-group-item-text">List group item's text </p>
+	</a>
+</div>
+	
+
+
+
+
+</div>
+</body>
+</html>

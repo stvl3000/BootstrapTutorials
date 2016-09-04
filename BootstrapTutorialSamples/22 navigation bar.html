@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+<h3> Navigation Bar</h3>
+<p>created with &lt;nav class="navbar navbar-default"&gt; .</p>
+<nav class="navbar navbar-default">
+	<div class="container-fluid row">
+		<div class="navbar-header col-sm-3">	<div class="col-sm-3">3</div>
+			<div class="col-sm-3">3</div>
+			<div class="col-sm-3">3</div>
+			<div class="col-sm-3">
+			<a class="navbar-brand" href="#">WebSiteName</a></div>
+		</div>
+		<ul class="nav navbar-nav col-sm-9">
+			<li class="active col-sm-3"><a href="#">Home</a></li>
+			<li class="col-sm-3"><a href="#">News</a></li>
+			<li class="col-sm-3"><a href="#">Search</a></li>
+			<li class="col-sm-3"><a href="#">About</a></li>
+		</ul>
+	</div>
+</nav>
+<p>every row's sub class .col-sm-x must contain <b>Integers Only</b>. </p>
+<p>.col-md-2.5 will <b>NOT</b> work.</p>
+
+<h3>Inverted Navigation Bar</h3>
+<p>.navbar-inverse class will get inverse navigation bar</p>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">WebSiteName</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Search</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</div>
+</nav>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">WebSiteName</a>
+		</div>
+		<div class="collapse navbar-collapse" id="topbar">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Search</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+		</div>
+	</div>
+</nav>
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Websitename</a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bottombar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="bottombar">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Search</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+		</div>
+	</div>
+</nav>
+
+<h3>Navigation Bar With Dropdown</h3>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">WebSiteName</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li class="dropup">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">News <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Australia</li>
+					<li><a href="#">China</a></li>
+					<li><a href="#">US</a></li>
+					<li><a href="#">Others</a></li>
+				</ul>				
+			</li>
+			<li><a href="#">Search</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</div>
+</nav>
+
+<h3>Right-aligned Navigation Bar</h3>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">WebsiteName</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Search</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-envelope"></span> &nbsp;About</a></li>
+		</ul>
+	</div>
+</nav>
+<h3>Collapsing The Navigation Bar</h3>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">WebSiteName</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">News <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Australia</a></li>
+					<li><a href="#">China</a></li>
+					<li><a href="#">US</a></li>
+					<li><a href="#">Others</a></li>
+				</ul>				
+				</li>
+				<li><a href="#">Search</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-envelope"></span> About</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	<h3>Collapsible Navbar</h3>
+	<p>The Collapsible Navbar is hidden on small screens and replaced by a <b>button  <span class="glyphicon glyphicon-align-justify"></span></b> in the top right corner when resizing this window. Only when the button is clicked, the navigation bar will be displayed in stacked mode.<br/>However, the button <span class="glyphicon glyphicon-align-justify"></span> is created by 3 off <span style="color:blue"> <b>&lt;span class="icon-bar"&gt;&lt;/span&gt;</b></span>, each of it created one line in <b>the</b> icon, which means it is a <b> drawing</b> rather than an Icon.<br/><br/></p>
+</div>
+
+
+
+
+
+
+
+
+<footer class="panel">
+footer
+</footer>
+</body>
+</html>

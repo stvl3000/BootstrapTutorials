@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+
+<h3>Simple Collapsible</h3>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+<div id="demo" class="collapse in">
+	Lorem ipsum dolor site amet, consectetur adipisicing elit, 
+	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
+	By default, the collapse element is hidden, however, add .in class to show the content by default.
+</div>
+<br/><br/>
+<p class="panel panel-success">Use an a element with href attribute to identify the target instead of button with data-target element.</p>
+<a href="#demo" class="btn btn-success" data-toggle="collapse">Simple collapse with &lt;a&gt; element</a>
+<br/>
+<h3>Collapsible Panel</h3>
+<div class="panel-group">
+	<div class="panel-success">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+			<a data-toggle="collapse" href="#collapse1">Collapsible Panel <span class="caret"></span></a>
+			</h4>
+		</div>
+		<div id="collapse1" class="panel-collapse collapse in">
+			<div class="panel-body">Panel Body</div>
+			<div class="panel-footer">Panel Footer</div>
+		</div>
+	</div>
+</div><br/>
+
+<h3>Collapsible List Group</h3>
+<div class="panel-group">
+	<div class="panel panel-success">
+		<div class="panel-heading">
+		<h4 class="panel-title">
+		<a data-toggle="collapse" href="#collapse2">Collapsible List Group</a>
+		</h4>
+		</div>
+		<div id="collapse2" class="panel-collapse collapse in">
+			<ul class="list-group">
+				<li class="list-group-item">One</li>
+				<li class="list-group-item">Two</li>
+				<li class="list-group-item">Three	</li>
+			</ul>
+			<div class="panel-footer">Footer</div>
+		</div>
+	</div>
+</div><br/>
+
+<h3>Accordion</h3>
+<p>.data-parent attribute to make sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown. a simple accodion is the extension of panel component, no other class needed.</p>
+<div class="panel-group" id="accordion">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+			<a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Collapsible Group 1</a>
+			</h4>
+		</div>
+		<div id="collapse11" class="panel-collapse collapse in">
+			<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+			minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-success">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+			<a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Collapsible Group 2</a>
+			</h4>
+		</div>
+		<div id="collapse12" class="panel-collapse collapse">
+			<div class="panel-body">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+			minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat.</div>
+		</div>
+	</div>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+			<a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Collapsible Group 3</a>
+			</h4>
+		</div>
+		<div id="collapse13" class="panel-collapse collapse">
+			<div class="panel-body">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+			minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat.</div>
+		</div>
+	</div>
+</div>
+
+			
+	
+
+
+
+
+
+
+</div>
+</body>
+</html>

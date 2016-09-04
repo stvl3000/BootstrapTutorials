@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+<a href="#" data-toggle="tooltip" data-placement="auto" title="Hooray!">data-placement="auto"</a> &nbsp; &nbsp; &nbsp;
+<a href="#" data-toggle="tooltip" title="Hooray!">no data-placement, it goes above</a>
+<h3>simple tooltip</h3>
+<a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+
+<h3>Tooltip position</h3>
+<p> if data-placement="auto", or "auto left", the browser will dicide which way to display first if possible.</p>
+<ul class="list-inline">
+	<li><a href="#" data-toggle="tooltip" data-placement="auto left" title="Hooray!">Auto Left</a></li>
+	<li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+	<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Horray!">Bottom</a></li>
+	<li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+	<li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
+	<li><a href="#" data-toggle="tooltip" data-placement="auto left" title="Hooray!">Auto Left</a></li>	
+<ul>
+
+
+</div>
+<script>
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+
+
+<div class="container">
+<br/><footer class="panel panel-info">footer<br/></footer>
+</div>
+</body>
+</html>

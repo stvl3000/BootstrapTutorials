@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>h1 Bootstrap heading (36 px) <small>heading secondary text (24 px)</small></h1><h3>heading secondary text (24 px)</h3>
+  <h2>h2 Bootstrap heading (30 px) <small>heading secondary text (18 px)</small></h2>
+  <h3>h3 Bootstrap heading (24 px) <small>heading secondary text (14 px)</small></h3>
+  <h4>h4 Bootstrap heading (18 px) <small>heading secondary text (12 px)</small></h4>
+  <h5>h5 Bootstrap heading (14 px) <small>heading secondary text ( px)</small></h5>
+  <h6>h6 Bootstrap heading (12 px) <small>heading secondary text </small></h6>
+  <p>p element Bootstrap not heading (14 px)</p>
+</div>
+Use the mark element to <mark style="background-color:lightgray;">highlight </mark> text. </p>
+<div class="container">
+  <h3>Abbreviations<small>: equal to tooltips</small></h3>
+  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+  <blockquote style="background-color:lightgreen;">
+    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+	<footer>From WWF's website</footer>
+  </blockquote>
+  <p>To show the quote on the right use the class <mark style="background-color:lightyellow;">.blockquote-reverse</mark></p>
+  <blockquote class="blockquote-reverse" style="background-color:lightyellow;">
+    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million memebers in the United States and close to 5 million globally.</p>
+	<footer>From WWF's website</footer>
+  </blockquote>
+  
+  <p>The dl element indicates a description list:</p>
+  <dl>
+    <dt>Coffee</dt>
+	<dd>-black hot drink</dd>
+	<dt>Milk</dt>
+	<dd>-white cold drink</dd>
+  </dl>
+  <h2>Code Snipets</h2>
+  <p>Inline snippets of code should be embedded in the code element:</p>
+  <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+  <code>good</code>
+  use <kbd style="background-color:blue;">ctrl+p</kbd> to open the Print dialog box.
+  <pre>
+  Text in a pre element is display in a
+  fixed-width font, and it preserves both spaces and line breaks.</pre>
+  <h3>Contextual Colors</h3>
+  <p>Use the contextual classes to provide "meaning through colors":</p>
+  <p class="text-muted">This text is muted.  .text-muted class</p>
+  <p class="text-primary">This text is important.  .text-primary class </p>
+  <p class="text-success">This text indicates success.  .text-success class </p>
+  <p class="text-info">This text represent some information.  .text-info class</p>
+  <p class="text-warning">This text represents a warning.   .text-warning class</p>
+  <p class="text-danger">This text represents danger.   .text-danger class</p>
+  <p class="bg-primary">This text is important.  .bg-primary class</p>
+  <p class="bg-success">This text indicates success. .bg-success class</p>
+  <p class="bg-info">This text represents some information</p>
+  <p class="bg-warning">This text represents warning. .bg-warning class</p>
+  <p class="bg-danger">This text represents danger. .bg-danger class </p>
+  <p class="lead">make stand out, with  .lead class</p>
+  <p class="small">this is .small class</p>
+  <p class="text-left">this is .text-left class</p>
+  <p class="text-right">this is .text-right class</p>
+  <p class="text-center">this is .text-center class</p>
+  <p class="text-justify">this is .text-justify class. this is .text-justify class, this is .text-justify class.</p>
+  <p class="text-nowrap">this is .text-nowrap class, this is .text-nowrap class, this is .text-nowrap class.</p>
+  <p class="text-lowercase">THIS IS .TEXT-LOWERCASE CLASS, THESE CHARACTERS ARE ALL IN CAPITAL, this is .text-lowercase class, this .text-lowercase class.</p>
+  <p class="text-uppercase">this is .text-uppercase class, this is .text-uppercase class, this is .text-uppercase class</p>
+  <p class="text-capitalize">this is .text-capitalize class, this is .text-capitalize class</p>
+  <p> Thee <abbr title="world health organization">WHO</abbr was founded in 1948.(normal abbr)</p>
+  <p> The <abbr title="world health organization" class="initialism">WHO</abbr> was founded in 1948. ( .initialism class)</p>
+  <ul><li>coffee</li><li>tea<ul><li>black tea</li><li>green tea</li></ul></li>
+  <li>milk</li></ul>
+  <ul class="list-unstyled">
+  <li>Coffee</li>
+  <li>Tea
+    <ul class="list-unstyled">
+	  <li>black tea</li>
+	  <li class="text-capitalize">green tea</li>
+	</ul>
+  </li>
+  <li>Milk</li>
+  </ul>
+  <ul class="list-inline">
+  <li>COFFEE</li>
+  <li>TEA</li>
+    <ul class="list-inline"><li>black tea</li>
+	<li>green tea</li>
+	</ul>  
+  <li>MILK</li>
+  </ul>
+  <dl class="dl-horizontal">
+   <dt>Coffee</dt>
+   <dd>- black hot drink</dd>
+   <dt>Milk</dt>
+   <dd>- white cold drink</dd>
+  </dl>
+  make a &lt;pre&gt; element scrollable.
+  <pre class="pre-scrollable">make a &lt;pre&gt; element scrollable.make a &lt;pre&gt; element scrollable.make a &lt;pre&gt; element scrollable.make a &lt;pre&gt; element scrollable.make a &lt;pre&gt; element scrollable.make a &lt;pre&gt; element scrollable.make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.valuemake a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  valuev
+  valuemake a &lt;pre&gt; element scrollable.make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  valuemake a &lt;pre&gt; element scrollable.
+  valuemake a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.make a &lt;pre&gt; element scrollable.make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  make a &lt;pre&gt; element scrollable.
+  </pre>
+  
+  
+  
+</div>
+
+
+</body>
+</html>
+

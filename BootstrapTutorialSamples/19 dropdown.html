@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+<h3>Dropdowns & Dropdown Divider</h3>
+<p>The .dropdown class is used to indicate a dropdown menu.</p>
+<p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+<p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>
+<p> .divider class is used to separate links inside the dropdown menu with a thin horizontal border</p>
+<div class="dropdown">
+	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example <span class="caret"></span></button>
+	<ul class="dropdown-menu">
+		<li><a href="#">HTML</a></li>
+		<li><a href="#">CSS</a></li>
+		<li><a href="#">JavaScript</a></li>
+		<li class="divider"></li>
+		<li><a href="#">About</a></li>
+	</ul>
+</div> <br/>
+
+<h3>Dropdown Header</h3>
+<p>.dropdown-header class adds a header inside the dropdown menu</p>
+<p>.disabled class disable an item inside the dropdown menu</p>
+<p>.dropup class makes the dropdown menu expand upwards instead of downwards.</p>
+<div class="row">
+<div class="col-sm-3 dropdown">
+	<button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Tutorials <span class="caret"></span></button>
+	<ul class="dropdown-menu">
+		<li class="dropdown-header">courses</li>
+		<li><a href="#">HTML</a></li>
+		<li class="disabled"><a href="#">CSS (disabled)</a></li>
+		<li><a href="#">JavaScript</a></li>
+		<li class="divider"></li>
+		<li class="dropdown-header">information</li>
+		<li><a href="#">About</a></li>
+	</ul>
+</div>
+<div class="col-sm-3 dropdown dropdown">
+	<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Tutorials <span class="caret"></span></button>
+	<ul class="dropdown-menu dropdown-menu-right">
+		<li class="dropdown-header">dropdown-menu-right</li>
+		<li><a href="#">HTML</a></li>
+		<li><a href="#">CSS</a></li>
+		<li class="disabled"><a href="#">JS</a><li>
+		<li class="dropdown-header">description</li>
+		<li><a href="#">About </a></li>
+	</ul>
+</div>	
+<div class="col-sm-3 dropdown dropdown">
+	<button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Tutorials <span class="caret"></span></button>
+	<ul class="dropdown-menu">
+		<li class="dropdown-header">dropdown-menu-right</li>
+		<li><a href="#">HTML</a></li>
+		<li><a href="#">CSS</a></li>
+		<li class="disabled"><a href="#">JS</a><li>
+		<li class="dropdown-header">description</li>
+		<li><a href="#">About </a></li>
+	</ul>
+</div>	
+<div class="col-sm-3 dropup">
+	<button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Dropup <span class="caret"></span></button>
+	<ul class="dropdown-menu dropdown-menu-right">
+		<li class="dropdown-header">This is dropup menu</li>
+		<li><a href="#">Java</a></li>
+		<li><a href="#">Python</a></li>
+		<li><a href="#">MongoDB</a></li>
+		<li class="divider"></li>
+		<li class="dropdown-header">helps</li>
+		<li class="disabled"><a href="#">About</a></li>
+	</ul>
+</div><br/><br/>
+
+<h3>Dropdowns accessibility</h3>
+<p>The .dropdown class is used to indicate a dropdown menu.</p>
+<p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+<div class="dropdown">
+	<button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials <span class="caret"></span></button>
+	<ul class="dropdown-menu" role="menu" aria-labelleby="menu1">
+		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</li>
+		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+		<li role="presentation" class="divider"></li>
+		<li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+	</ul>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
